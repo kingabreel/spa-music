@@ -2,6 +2,13 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.4.
 
+## Images 
+
+![Inicio](./public/image.png)
+![Integrantes](./public/image_2.png)
+![Principais músicas](./public/image_3.png)
+![Próximos shows e Albuns](./public/image_4.png)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
