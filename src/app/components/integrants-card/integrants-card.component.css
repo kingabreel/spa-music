@@ -1,0 +1,42 @@
+.singer-card {
+    background-color: #222;
+    color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    max-width: 300px;
+    height: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.singer-card:hover {
+    transform: scale(2px);
+}
+
+.singer-image > img {
+    width: 100%;
+    max-height: 230px;
+    border-bottom: 2px solid #444;
+}
+
+.singer-name {
+    margin: 15px 0 5px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #f1c40f;
+}
+
+.singer-function {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #aaa;
+}
+
+.singer-description {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #ccc;
+}

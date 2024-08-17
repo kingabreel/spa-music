@@ -1,0 +1,83 @@
+main {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #000;
+}
+
+main > div {
+    overflow: hidden;
+    width: 100vw;
+}
+
+main > div.text{
+    filter: brightness(.3);
+}
+div > img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    filter: blur(1.2px);
+}
+
+main > button {
+    position: absolute;
+    top: 50vh;
+    background-color: #000;
+    color: #fff;
+    width: 4.5rem;
+    height: 10rem;
+    z-index: 3;
+    border: 0;
+    border-radius: 6px;
+}
+
+p {
+    position: absolute;
+    color: #fff;
+    top: 30vh;
+    z-index: 3;
+    width: 50vw;
+    background: none;
+    font-size: 26px;
+    text-align: justify;
+    left: 15rem;
+}
+button#left {
+    left: 1rem;
+}
+
+button#right {
+    right: 1rem;
+}
+
+main > button:hover {
+    background-color: #111;
+    color: #f7f7f7;
+    font-size: 24px;
+    transition: 1s;
+}
+
+section {
+    height: 100vh;
+    overflow: hidden;
+    margin-top: 8rem;
+}
+
+.line-one, .line-two {
+    display: flex;
+    gap: 5vw;
+    justify-content: center;
+}
+
+section#albums {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    gap: 50px;
+    background-color: #111;
+}

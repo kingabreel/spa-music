@@ -1,0 +1,38 @@
+<main>
+    <p *ngIf="index == 1">Scorpions é icônica banda de rock alemã formada em 1965. Com uma carreira que atravessa cinco décadas, o grupo é conhecido por seus riffs de guitarra marcantes e baladas poderosas. Hits como "Wind of Change" e "Rock You Like a Hurricane" consolidaram sua reputação como uma das maiores bandas de hard rock do mundo</p>
+
+    <p *ngIf="index == 3">Em 1990, o Scorpions lançou a música "Wind of Change", que se tornou um hino do final da Guerra Fria. A canção, inspirada pela queda do Muro de Berlim, capturou o espírito de esperança e mudança do momento e se tornou um dos singles mais vendidos da década</p>
+    <button id="left" (click)="changeImg(-1)">
+        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e8eaed"><path d="M400-80 0-480l400-400 61 61.67L122.67-480 461-141.67 400-80Z"/></svg>
+    </button>
+        <div [ngClass]="{ 'text': index === 1 || index === 3 }">
+            <img src="{{images[index]}}" alt="">
+        </div>
+    <button id="right" (click)="changeImg(1)" >
+        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e8eaed"><path d="m309.67-81.33-61-61.67L587-481.33 248.67-819.67l61-61.66 400 400-400 400Z"/></svg>
+    </button>
+</main>
+
+<section class="integrants">
+    <div class="line-one">
+        <app-integrants-card image="https://www.haz.de/resizer/v2/64OFUP44G5H4BHRGPX3Q7IVP5I.jpg?auth=416c0b1816a50ca0b2145454ce6a0386b1e071bc843557904301e0cd16fc76d7&quality=70&width=1441&height=1441&smart=true" name="Klaus Meine" function="Singer" description="Klaus Meine é cantor e compositor, com incríveis 76 anos, segue fazendo turnês."></app-integrants-card>
+        <app-integrants-card image="/assets/integrants/rudolf-schenker.jpg" name="Rudolf Schenker" function="Guitar" description="Rudolf Schenker é um guitarrista e compositor alemão, um dos pilares da banda, responsável por grande parte das melodias da banda."></app-integrants-card>
+        <app-integrants-card image="/assets/integrants/matthias-jabs.jpg" name="Matthias Jabs" function="Guitar" description="Antes de entrar para os Scorpions, Matthias já tocou nas bandas Lady e Fargo"></app-integrants-card>
+    </div>
+    <div class="line-two">
+        <app-integrants-card image="/assets/integrants/pawel-maciwoda.jpg" name="Pawel Maciwoda" function="Bass guitar" description="Paweł Mąciwoda é um músico polonês. Membro desde 2004, substituiu Ralph Rieckermann na banda."></app-integrants-card>
+        <app-integrants-card image="/assets/integrants/mikkey-dee.jpg" name="Mikkey Dee" function="Drumm" description="Micael Kiriakos Delaoglou, mais conhecido como Mikkey Dee, faz parte do grupo desde 2016."></app-integrants-card>
+    </div>
+</section>
+
+<section id="albums">
+    <app-sample-card trackId="26fZwf1ImE4aUJ4XaqOkUg"></app-sample-card>
+    <app-sample-card trackId="1bKQ48M9onID2kbSpRy8kK"></app-sample-card>
+    <app-sample-card trackId="0RdUX4WE0fO30VnlUbDVL6"></app-sample-card>
+    <app-sample-card trackId="58XWGx7KNNkKneHdprcprX"></app-sample-card>
+    <app-sample-card trackId="3ovjw5HZZv43SxTwApooCM"></app-sample-card>
+    <app-sample-card trackId="6Ok4D4w117mSi9OP8tmrpg"></app-sample-card>
+    <app-sample-card trackId="7kjsCbksOZotNNHOvKsJJh"></app-sample-card>
+    <app-sample-card trackId="1abFEUbbAk8kQNOzy301Qt"></app-sample-card>
+    <app-sample-card trackId="3A4IneIM1MdcmW0ZuV8ZYg"></app-sample-card>
+</section>
