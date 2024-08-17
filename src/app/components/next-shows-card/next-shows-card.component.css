@@ -1,0 +1,59 @@
+.show-card {
+    display: flex;
+    width: 35vw;
+    height: 8rem;
+    color: #000;
+    background-color: #ccc;
+    border-radius: 3px;
+}
+
+.show-date, .show-details {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border-right: 1px solid #636363;
+    width: 70px;
+    justify-content: center;
+    padding: 30px;
+}
+
+.show-date > h3 {
+    font-size: 26px;
+    font-weight: 500;
+    color: #c09c0d;
+}
+
+.show-date > h1 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #f1c40f;
+}
+
+.show-details {
+    width: 15vw;
+}
+.show-details > h1 {
+    font-size: 32px;
+    font-weight: 500;
+    color: #161616;
+}
+
+.show-details > h2 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.show-card > h1 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 46px;
+    align-self: center;
+    padding-left: 30px;
+}
+
+@media (max-width: 1440px) {
+    .show-card {
+        height: auto;
+        width: auto;
+    }
+}

@@ -1,0 +1,14 @@
+<div class="album-card" *ngIf="album">
+    <div class="album-image">
+      <img [src]="album.images[1]?.url" alt="Image of {{album.name}}">
+    </div>
+    <div class="album-details">
+      <h1>{{album.name}}</h1>
+      <ul class="track-list">
+        <li *ngFor="let track of album.tracks.items"><a href="{{track.external_urls.spotify}}" target="_blank">{{track.name}}</a></li>
+      </ul>
+    </div>
+</div>
+<div *ngIf="!album">
+    <p>Problema ao carregar album...</p>
+</div>

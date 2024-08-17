@@ -19,7 +19,7 @@ div > img {
     width: 100%;
     height: 100%;
     position: relative;
-    filter: blur(1.2px);
+    filter: blur(.5px);
 }
 
 main > button {
@@ -32,24 +32,29 @@ main > button {
     z-index: 3;
     border: 0;
     border-radius: 6px;
+    filter: opacity(.5);
+}
+
+button {
+    cursor: pointer;
 }
 
 p {
     position: absolute;
     color: #fff;
-    top: 30vh;
+    top: 25vh;
     z-index: 3;
     width: 50vw;
     background: none;
     font-size: 26px;
     text-align: justify;
-    left: 15rem;
+    left: 25rem;
 }
-button#left {
+button.left {
     left: 1rem;
 }
 
-button#right {
+button.right {
     right: 1rem;
 }
 
@@ -72,7 +77,7 @@ section {
     justify-content: center;
 }
 
-section#albums {
+section#tracks, section#albums {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -80,4 +85,38 @@ section#albums {
     width: 100vw;
     gap: 50px;
     background-color: #111;
+}
+
+section#albums {
+    flex-wrap: nowrap;
+    margin: 0;
+    background-color: #f7f7f7;
+}
+
+section#shows {
+    display: flex;
+    height: 10rem;
+    gap: 50px;
+    margin: 3rem 0;
+    justify-content: center;
+    align-items: center;
+}
+
+#shows > button {
+    background-color: #444;
+    border: none;
+    padding: 0 0 0 10px;
+    height: 5rem;
+    filter: opacity(.4);
+}
+
+#shows > button:hover {
+    filter: opacity(1);
+    transition: .5s;
+}
+
+@media (max-width: 1440px) {
+    section#tracks, main {
+        height: auto;
+    }
 }

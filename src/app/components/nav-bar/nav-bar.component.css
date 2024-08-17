@@ -25,9 +25,21 @@ nav > div.buttons {
     align-items: center;
     justify-content: space-around;
     width: 25vw;
+    gap: 50px;
 }
 
 .buttons>a {
     color: #fff;
     font-size: 36px;
+}
+
+@media (max-width: 1440px) {
+    nav > div.buttons {
+        height: auto;
+        width: auto;
+    }
+
+    .buttons > a {
+        font-size: 24px;
+    }
 }

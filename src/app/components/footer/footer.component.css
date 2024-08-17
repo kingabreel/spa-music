@@ -1,0 +1,45 @@
+footer {
+    height: 8rem;
+    width: 100vw;
+    background-color: #202020; 
+    color: #e8eaed;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .musics, 
+footer .social {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+footer .musics img, 
+footer .social img {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+footer .musics img:hover, 
+footer .social img:hover {
+    transform: scale(1.1); 
+    opacity: 0.8;
+}
+
+footer h1 {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+footer h1 a {
+    color: #f8d64e;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer h1 a:hover {
+    color: #e8eaed; 
+}
